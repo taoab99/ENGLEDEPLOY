@@ -59,7 +59,7 @@ function CartegoryProducts() {
         <div className="container-fluid py-4 container-padding " style={{ minHeight: '300px' }}>
             <h3 style={{ textAlign: 'left' }}>{state}</h3>
             <p>tìm thấy {Category.length} sản phẩm liên quan</p>
-            <div class="row py-3">
+            <div className="row py-3">
                 {
                     Category.length > 0 &&
 
