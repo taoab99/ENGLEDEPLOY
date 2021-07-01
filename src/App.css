@@ -1,0 +1,473 @@
+.App {
+  text-align: center;
+}
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.header-logo {
+  display: flex;
+  justify-content: center;
+}
+.menu-cap1 {
+  width: 200px;
+}
+.menu-cap1 a {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+.elementor-widget {
+  height: 90px;
+}
+.element-widget-box {
+  display: flex;
+  flex-flow: row wrap;
+  border: 1px solid gray;
+  height: 100%;
+  padding: 0 10px;
+}
+.widget-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: gray;
+  font-size: 20px;
+}
+.widget-title {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 17px;
+  height: 100%;
+  padding: 0;
+}
+.text-align-left > li {
+  margin: 0;
+}
+/* style homepageMenuSlide */
+.HomepageMenuSlide {
+  height: 696px;
+}
+.homepage-left-menu {
+  height: 50%;
+  padding: 0 0;
+}
+.HomepageMenuSlide {
+  padding: 0;
+}
+/* banner style */
+.row-banner {
+  width: 100%;
+  height: 320px;
+  position: relative;
+  background-color: red;
+}
+.row-banner-absolute {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 32%;
+  bottom: 5%;
+  background-color: rgba(0, 187, 211, 0.6);
+  color: white;
+  padding: 10px;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+/* style of Products */
+
+.card-boton input {
+  padding: 5px;
+  border: none;
+  color: white;
+}
+.card-boton input:hover {
+  background-color: red !important;
+}
+/* style of banner2 */
+
+.baner2 {
+  height: 200px;
+}
+
+/* style of footer */
+
+.footer {
+  background-color: black;
+}
+
+.padding-col-footer {
+  padding: 0;
+}
+.h3-font {
+  font-size: 20px;
+}
+.border-cricle-info {
+  padding: 5px;
+  font-size: 35px;
+}
+.footer-col1,
+.footer-colend {
+  display: flex;
+  flex-flow: column;
+  text-align: left;
+}
+.footer-ul {
+  margin: 20px 0;
+  text-align: left;
+}
+.footer-ul > li > a {
+  color: white;
+}
+.footer-colend {
+  align-items: center;
+}
+.border-cricle-info {
+  padding: 5px;
+  font-size: 25px;
+}
+
+.cart-table {
+  width: 100%;
+}
+.car-total {
+  display: flex;
+  flex-flow: column;
+  padding: 5%;
+  /* position: sticky;
+  top: 0; */
+  height: 250px;
+  border: 1px solid rgb(209, 209, 209);
+}
+.car-total > div {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(209, 209, 209);
+  width: 100%;
+  height: 30%;
+}
+.car-total > div > button {
+  width: 100%;
+  padding: 5px;
+  font-size: 20px;
+  border: none;
+  background-color: rgb(253, 53, 17);
+  outline: none;
+  color: white;
+}
+.cart-tr {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid rgb(209, 209, 209);
+  padding: 10px 0;
+}
+.td {
+  height: 100%;
+}
+.td > p {
+  margin: 0px;
+}
+.td > button {
+  width: 100%;
+  padding: 10px 0;
+  background-color: rgb(253, 253, 19);
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+.td-15 {
+  width: 15%;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.td-50 {
+  width: 70%;
+  padding: 10px 30px;
+  text-align: left;
+  display: flex;
+  flex-flow: column;
+}
+.contac {
+  text-align: left;
+}
+.contac-text {
+  font-size: 20px;
+  text-size-adjust: 12px;
+}
+.contact-info {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+}
+.contact-info > div {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+.contact-i {
+  width: 10%;
+  font-size: 18px;
+}
+.contact-a {
+  width: 90%;
+  font-size: 18px;
+}
+.contact-title {
+  text-align: left;
+}
+.contac-input {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.contac-input > input {
+  width: 45%;
+  padding: 5px 10px;
+  font-size: 18px;
+  border: 1px solid rgb(209, 207, 207);
+  outline: 1px solid cyan;
+}
+
+/* style cho account */
+.account {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  border-radius: 0.25rem;
+  padding: 20px 10px;
+  background-color: #fff;
+  box-shadow: 0 3px 10px 0 gray;
+}
+.account_box {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 10px 0;
+}
+/* .account_box > input,
+button {
+  width: 100%;
+  padding: 10px 10px;
+  margin: 5px 0;
+  font-size: 17px;
+} */
+.account_box .dangxuat {
+  width: 45%;
+  padding: 10px 10px;
+  margin: 5px 0;
+  font-size: 17px;
+}
+.account_box > input {
+  border: 1px solid rgb(209, 207, 207);
+  outline: none;
+  width: 100%;
+  padding: 10px 10px;
+  margin: 5px 0;
+  font-size: 17px;
+}
+.account_box > button {
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px 10px;
+  margin: 5px 0;
+  font-size: 17px;
+}
+.dangnhap {
+  width: 45%;
+  background-color: rgb(250, 70, 25);
+}
+.justify-conten {
+  flex-flow: row wrap !important;
+  justify-content: space-between;
+}
+/* thiết kế web đáp ứng */
+@media screen and (min-width: 576px) {
+  .account {
+    width: 500px;
+  }
+  .padding-col-footer {
+    padding: 20px 20px;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* .margin-fixed {
+    margin-top: 98px;
+  } */
+  /* .position-fixed {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+  } */
+  .container-padding {
+    padding: 0 80px;
+  }
+  .header-logo {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .menu-cap1 {
+    width: 200px;
+  }
+  .menu-cap1 a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+  .menu-cap1 a:hover {
+    color: red !important;
+  }
+  .widget-icon {
+    font-size: 30px;
+  }
+  .widget-title > p {
+    font-size: 12px;
+  }
+  .dropdown-ul {
+    position: absolute !important;
+    width: 250px;
+    z-index: 1000;
+    top: 0;
+    left: 100%;
+  }
+  .text-align-left {
+    text-align: left;
+  }
+  /* ### */
+  .HomepageMenuSlide {
+    height: 348px;
+  }
+  .HomepageMenuSlide {
+    padding: 5px 0 0 7px;
+  }
+  .homepage-left-menu {
+    height: 100%;
+  }
+  .homebanner {
+    width: 100%;
+    height: 200px;
+    background-color: blue;
+  }
+  .item {
+    height: 450px;
+  }
+  .title-item,
+  .title-item-cart,
+  .quantity {
+    display: flex;
+    flex-flow: column;
+  }
+  .title-item-cart {
+    align-items: flex-start;
+  }
+  .title-item-button {
+    display: flex;
+    align-items: flex-end;
+  }
+  .title-item-button > input {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+  }
+  .quantity {
+    flex-flow: row wrap;
+    align-items: center;
+  }
+  .quantity > h2 {
+    margin: 0 20px 0 0;
+  }
+  .quantity-box {
+    width: 50px;
+    height: 40px;
+    border: 1px solid gray;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .baner2 {
+    height: 300px;
+  }
+
+  /* style of footer */
+  .footer {
+    background-color: black;
+  }
+  .border-cricle-info {
+    padding: 5px;
+    font-size: 35px;
+  }
+  .footer-col1,
+  .footer-colend {
+    display: flex;
+    flex-flow: column;
+    text-align: left;
+  }
+  .padding-col-footer > h3 {
+    font-size: auto;
+  }
+  .footer-ul {
+    margin: 20px 0;
+    text-align: left;
+  }
+  .footer-ul > li > a {
+    color: white;
+  }
+  .footer-colend {
+    align-items: flex-end;
+  }
+  .slider {
+    width: 100%;
+    height: 348px;
+    padding: 0px;
+  }
+
+  .contact-send {
+    width: 100%;
+  }
+  .contact-send > input {
+    width: 100%;
+    border: 1px solid rgb(209, 207, 207);
+    outline: none;
+    resize: 200;
+  }
+  .contact-button {
+    padding: 10px;
+    outline: none;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+  }
+  .text-area {
+    height: 100px;
+  }
+  .account {
+    width: 600px;
+  }
+  .td > button {
+    font-size: 20px;
+  }
+  .td > p {
+    font-size: 20px;
+  }
+}
