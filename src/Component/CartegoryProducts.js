@@ -49,7 +49,7 @@ function CartegoryProducts() {
     const dispatch = useDispatch()
     const state = location.state;
 
-    useEffect((state) => {
+    useEffect(() => {
         dispatch(actions.asyncgetcategory(state));
     }, [state])
 

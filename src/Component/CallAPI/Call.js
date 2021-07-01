@@ -1,7 +1,7 @@
 import axios from 'axios';
 import * as Config from './Config';
 
-export default function Call(enpont, method, data) {
+export default function (enpont, method, data) {
     return (
         axios({
             method: method,
