@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/deploydoan/static/css/main.f5039949.chunk.css",
+    "main.js": "/deploydoan/static/js/main.62bab11d.chunk.js",
+    "main.js.map": "/deploydoan/static/js/main.62bab11d.chunk.js.map",
+    "runtime-main.js": "/deploydoan/static/js/runtime-main.39ec978b.js",
+    "runtime-main.js.map": "/deploydoan/static/js/runtime-main.39ec978b.js.map",
+    "static/css/2.0ccb862f.chunk.css": "/deploydoan/static/css/2.0ccb862f.chunk.css",
+    "static/js/2.c756cdeb.chunk.js": "/deploydoan/static/js/2.c756cdeb.chunk.js",
+    "static/js/2.c756cdeb.chunk.js.map": "/deploydoan/static/js/2.c756cdeb.chunk.js.map",
+    "static/js/3.f444450e.chunk.js": "/deploydoan/static/js/3.f444450e.chunk.js",
+    "static/js/3.f444450e.chunk.js.map": "/deploydoan/static/js/3.f444450e.chunk.js.map",
+    "index.html": "/deploydoan/index.html",
+    "static/css/2.0ccb862f.chunk.css.map": "/deploydoan/static/css/2.0ccb862f.chunk.css.map",
+    "static/css/main.f5039949.chunk.css.map": "/deploydoan/static/css/main.f5039949.chunk.css.map",
+    "static/js/2.c756cdeb.chunk.js.LICENSE.txt": "/deploydoan/static/js/2.c756cdeb.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.39ec978b.js",
+    "static/css/2.0ccb862f.chunk.css",
+    "static/js/2.c756cdeb.chunk.js",
+    "static/css/main.f5039949.chunk.css",
+    "static/js/main.62bab11d.chunk.js"
+  ]
+}
