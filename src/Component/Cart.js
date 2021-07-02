@@ -9,9 +9,7 @@ function Cart() {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        if (acc) {
-            dispatch(action.asyncloadcart(acc));
-        }
+        dispatch(action.asyncloadcart(acc));
     }, [acc])
 
     // xoa  sap pham :

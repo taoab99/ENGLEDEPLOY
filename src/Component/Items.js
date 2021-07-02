@@ -29,8 +29,10 @@ function Items(props) {
     var add = (item, acc) => {
         if (acc === "") {
             alert('bạn cần phải đăng nhập đăng nhập');
+        } else {
+            dispatch(action.asyncaddtocart(item, acc));
         }
-        dispatch(action.asyncaddtocart(item, acc));
+
     }
     return (
         <div className="container-fluid py-5 container-padding">
