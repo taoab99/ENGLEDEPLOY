@@ -5,6 +5,7 @@ import InfoItem from './InfoItem';
 import Addtocart from './addtocart';
 import AccountLoggin from './Loggin';
 import Category from './category';
+import Donhang from './donhang';
 
 const myReducers = combineReducers({
     state: GetproductHome,
@@ -12,7 +13,8 @@ const myReducers = combineReducers({
     InfoItem,
     Addtocart,
     AccountLoggin,
-    Category
+    Category,
+    Donhang
 
 });
 export default myReducers;

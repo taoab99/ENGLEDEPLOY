@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import * as action from './Action/index';
 import Call from './CallAPI/Call';
@@ -62,6 +63,7 @@ function Account() {
     return (
 
         <div className="container-fluid py-5">
+
             {
                 upload === true && <div className="account">
                     <Upload
@@ -72,10 +74,13 @@ function Account() {
             {
                 upload === false &&
                 <div className="account">
-
                     <div className="account_box">
                         <h2> Đăng Nhập Tài Khoản</h2>
-                        <p>xin chào {tkloggin} </p>
+                        <p>xin chào {tkloggin}
+                            {
+                                localStorage.getItem('status') === "true" && <Link to="/donhang" style={{ border: '1px solid gray' }}>xem đơn hàng</Link>
+                            }
+                        </p>
                     </div>
                     <div className="account_box">
                         <input type="text" name="email" placeholder="tên tài khoản của bạn" value={Account.email} onChange={onchange}></input>

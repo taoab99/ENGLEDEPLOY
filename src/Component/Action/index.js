@@ -139,3 +139,19 @@ export const category = (products) => {
         products
     }
 }
+
+// quản lý đơn hàng 
+export const asyncdonhang = () => {
+    return async (dispatch) => {
+        await Call("accout/getcartinaccount", 'GET', null)
+        .then(respon => {
+            dispatch(donhang(respon.data))
+        })
+    }
+}
+export const donhang = (donhang) => {
+    return {
+        type: types.GETDONHANG,
+        donhang
+    }
+}

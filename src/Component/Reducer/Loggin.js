@@ -8,16 +8,16 @@ var Reducer = (state = initialstate, action) => {
 
         //đăng nhập tài khoản
         case types.LOGGIN:
-            if (action.account.status === true) {
-
-                const email = action.account.account;
-                const id = action.account.id;
+            const email = action.account.account;
+            const id = action.account.id;
+            const status = action.account.status;
+            if (email && id) {
                 state = email;
                 alert(action.account.message);
+                localStorage.setItem("status", status);
                 localStorage.setItem("accounttoken", JSON.stringify(id));
                 localStorage.setItem("accountemail", JSON.stringify(state));
-            }
-            else {
+            } else {
                 alert(action.account.message);
             }
             return state;
@@ -29,6 +29,7 @@ var Reducer = (state = initialstate, action) => {
             if (window.confirm("bạn có muốn đăng xuất!")) {
                 state = null;
                 localStorage.setItem("accounttoken", '');
+                localStorage.setItem("status", '');
                 localStorage.setItem('accountemail', JSON.stringify(state));
                 return state;
             } else {

@@ -44,7 +44,7 @@ function Cart() {
     var totalMoney = (cart) => {
         var total = 0;
         for (var i = 0; i < cart.length; i++) {
-            total += cart[i].price * cart[i].soluong;
+               total += (cart[i].price - (cart[i].price / 100 * cart[i].sale)) * cart[i].soluong;
         }
         return total;
     }

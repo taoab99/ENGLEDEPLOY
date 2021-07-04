@@ -5,6 +5,7 @@ import Cart from './Cart';
 import Items from './Items';
 import Account from './Account';
 import CartegoryProducts from './CartegoryProducts';
+import Donhang from './Donhang';
 const Route = [
     {
         path: "/",
@@ -41,6 +42,11 @@ const Route = [
         exact: true,
         main: () => <CartegoryProducts />
     },
+    {
+        path: "/Donhang",
+        exact: false,
+        main: () => <Donhang />
+    }
 ];
 
 export default Route;
