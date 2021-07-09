@@ -76,10 +76,13 @@ function Donhang(props) {
         return total;
     }
     return (
-        <div className="container-fluid py-5 container-padding">
+        <div className="thongtindangnhap">
+            <div className="hoso">
+                <h1>Đơn hàng </h1>
+            </div>
             {Donhang.length === 0 && <div>loading</div>}
             {Donhang.length !== 0 &&
-                <div className="px-5">
+                <div className="px-1 pt-5">
                     {
                         showtable(Donhang)
                     }

@@ -6,6 +6,8 @@ import Addtocart from './addtocart';
 import AccountLoggin from './Loggin';
 import Category from './category';
 import Donhang from './donhang';
+import Respondeletesp from './respondelete';
+import Datauser from './datauser'
 
 const myReducers = combineReducers({
     state: GetproductHome,
@@ -14,7 +16,9 @@ const myReducers = combineReducers({
     Addtocart,
     AccountLoggin,
     Category,
-    Donhang
+    Donhang,
+    Respondeletesp,
+    Datauser
 
 });
 export default myReducers;

@@ -22,10 +22,10 @@ function Footer() {
                 <div className=" col-6 col-sm-6 col-lg-2 padding-col-footer">
                     <h3 className="h3-font">KHÁCH HÀNG</h3>
                     <ul className="footer-ul">
-                        <li><a href="/">Tài khoản</a></li>
+                        <li><a href="/ACCOUNT">Tài khoản</a></li>
                         <li><a href="/">Đơn hàng đã mua</a></li>
                         <li><a href="/">Thẻ tín dụng</a></li>
-                        <li><a href="/">Địa chỉ giao hàng</a></li>
+                        <li><a href="/Acmanager/diachi">Địa chỉ giao hàng</a></li>
                         <li><a href="/">Thông tin cá nhân</a></li>
                         <li><a href="/">Đăng nhập</a></li>
                     </ul>
@@ -33,7 +33,7 @@ function Footer() {
                 <div className=" col-6 col-sm-6 col-lg-2 padding-col-footer">
                     <h3 className="h3-font">THÔNG TIN LIÊN HỆ</h3>
                     <ul className="footer-ul">
-                        <li><a href="/">giỏ hàng</a></li>
+                        <li><a href="/CART">giỏ hàng</a></li>
                         <li><a href="/">Sản phẩm mới</a></li>
                         <li><a href="/">Bán chạy nhất</a></li>
                         <li><a href="/">liên kết</a></li>

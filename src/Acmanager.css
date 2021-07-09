@@ -1,0 +1,33 @@
+
+.box_width {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border-bottom: 0.0625rem solid #efefef;
+}
+.box_width p {
+    text-align: center;
+}
+.box_ul {
+    width: 100%;
+    height: auto;
+}
+.box_ul ul {
+    width: 100%;
+    padding: 10px 0;
+    margin: 0px;
+}
+.box_ul ul li {
+    list-style-type: none;
+    text-align: left;
+}
+.box_ul ul li a {
+    display: block;
+    color: black;
+    font-size: 19px;
+    padding: 10px 0;
+}
+.box_ul ul li a:hover {
+    text-decoration: none;
+    color: red;
+}

@@ -70,7 +70,7 @@ function HomepageMenuSlide() {
                         </li>
                         <li className="nav-item">
                             <Link className="dropdown-item nav-link text-dark" to={{
-                                pathname: '/CartegoryProducts/quanau',
+                                pathname: '/CartegoryProducts/me&be',
                                 state: 'mẹ và bé'
                             }}>
                                 MẸ&BÉ

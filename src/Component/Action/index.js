@@ -144,14 +144,50 @@ export const category = (products) => {
 export const asyncdonhang = () => {
     return async (dispatch) => {
         await Call("accout/getcartinaccount", 'GET', null)
-        .then(respon => {
-            dispatch(donhang(respon.data))
-        })
+            .then(respon => {
+                dispatch(donhang(respon.data))
+            })
     }
 }
 export const donhang = (donhang) => {
     return {
         type: types.GETDONHANG,
         donhang
+    }
+}
+
+// xóa sản phẩm trong csdl
+
+export const asyncdeletesp = (id) => {
+    return async (dispatch) => {
+        Call(`products/deleteoneproducts?id=${id}`, 'DELETE', null)
+            .then(respon => {
+                dispatch(deletesp(respon.data));
+            })
+    }
+}
+
+export const deletesp = (respon) => {
+    return {
+        type: types.DELETESANPHAM,
+        respon
+    }
+}
+
+// lấy tất cả tài khoản người dùng
+
+export const asyncgetalluser = () => {
+    return (dispatch) => {
+        Call('accout/getaccount', 'GET', null)
+            .then(respon => {
+                dispatch(getalluser(respon.data));
+            })
+    }
+}
+
+export const getalluser = (datause) => {
+    return {
+        type: types.QUANLYUSER,
+        datause
     }
 }

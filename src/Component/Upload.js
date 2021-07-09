@@ -34,10 +34,8 @@ function Upload(props) {
             category: '',
             sale: 0,
             price: 0
-        })
-    }
-    const handleback = () => {
-        props.handleupload();
+        });
+
     }
     const onchange = (e) => {
         const name = e.target.name;
@@ -51,30 +49,72 @@ function Upload(props) {
 
     }
     return (
-        <div >
-            <h2>ĐĂNG SẢN PHẨM</h2>
-            <form className="account_box">
-                <input type="text" name="name" value={body.name} placeholder="tên sản phẩm" onChange={onchange} />
-                <input type="text" name="description" value={body.description} placeholder="mô tả" onChange={onchange} />
+        <div className="thongtindangnhap">
+            <div className="hoso">
+                <h1 style={{ fontSize: "19px", textAlign: "left" }}>Thêm Sản phẩm</h1>
+            </div>
+            <div className="pt-5">
+                <form>
+                    <div className="form-group row">
+                        <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">Tên sản phẩm</label>
+                        <div className="col-sm-10">
+                            <input type="text" name="name" onChange={onchange} value={body.name} className="form-control" id="inputEmail3" placeholder="Tên sản phẩm" />
+                        </div>
+                    </div>
 
-                <input type="text" name="category" value={body.category} placeholder="danh mục sản phẩm" onChange={onchange} />
+                    <div className="form-group row">
+                        <label htmlFor="inputPassword3" className="col-sm-2 col-form-label">Mô tả sản phẩm</label>
+                        <div className="col-sm-10">
+                            <input type="text" name="description" onChange={onchange} value={body.description} className="form-control" id="inputPassword3" placeholder="Mô tả sản phẩm" />
+                        </div>
+                    </div>
 
-                <input type="number" name="price" value={body.price} placeholder="nhập giá" onChange={onchange} />
+                    <div className="form-group row">
+                        <label htmlFor="inputPassword3" className="col-sm-2 col-form-label">Danh mục sản phẩm</label>
+                        <div className="col-sm-10">
+                            <input type="text" name="category" onChange={onchange} value={body.category} className="form-control" id="inputPassword3" placeholder="danh mục sản phẩm" />
+                        </div>
+                    </div>
 
-                <input type="number" name="sale" value={body.sale} placeholder="giảm giá" onChange={onchange} />
 
-                <input type="file" name="file"
-                    onChange={
-                        event => {
-                            const file = event.target.files[0];
-                            setfile(file);
-                        }
-                    }
+                    <div className="form-group row">
+                        <label htmlFor="inputPassword3" className="col-sm-2 col-form-label">Giá bán</label>
+                        <div className="col-sm-10">
+                            <input type="number" name="price" onChange={onchange} value={body.price} className="form-control" id="inputPassword3" placeholder="nhập giá" />
+                        </div>
+                    </div>
 
-                />
-                <button style={{ backgroundColor: "rgb(250, 70, 25)" }} onClick={send}>Gửi</button>
-                <p className="text-primary" style={{ cursor: "pointer" }} onClick={handleback}>Quay lại</p>
-            </form>
+
+                    <div className="form-group row">
+                        <label htmlFor="inputPassword3" className="col-sm-2 col-form-label">Giảm giá</label>
+                        <div className="col-sm-10">
+                            <input type="number" name="sale" onChange={onchange} value={body.sale} className="form-control" id="inputPassword3" placeholder="nhập phần trăm giảm giá" />
+                        </div>
+                    </div>
+
+
+                    <div className="form-group row">
+                        <label htmlFor="inputPassword3" className="col-sm-2 col-form-label">Chọn ảnh tải lên</label>
+                        <div className="col-sm-10">
+                            <input type="file" name="file"
+                                onChange={
+                                    event => {
+                                        const file = event.target.files[0];
+                                        setfile(file);
+                                    }
+                                }
+                                className="form-control" id="inputPassword3" placeholder="tải ảnh lên" />
+                        </div>
+                    </div>
+
+                    <div className="form-group row">
+                        <div className="col-sm-10">
+                            <button type="submit" className="btn btn-primary"
+                                onClick={send}>Sign in</ button>
+                        </div>
+                    </div>
+                </form>
+            </div>
 
         </div>
     );

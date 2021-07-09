@@ -11,6 +11,7 @@ var Reducer = (state = initialstate, action) => {
             const email = action.account.account;
             const id = action.account.id;
             const status = action.account.status;
+            console.log(action.account.phone);
             if (email && id) {
                 state = email;
                 alert(action.account.message);

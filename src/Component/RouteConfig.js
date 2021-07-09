@@ -6,6 +6,7 @@ import Items from './Items';
 import Account from './Account';
 import CartegoryProducts from './CartegoryProducts';
 import Donhang from './Donhang';
+import Acmanager from './Acmanager';
 const Route = [
     {
         path: "/",
@@ -46,6 +47,11 @@ const Route = [
         path: "/Donhang",
         exact: false,
         main: () => <Donhang />
+    },
+    {
+        path: "/Acmanager",
+        exact: false,
+        main: () => <Acmanager />
     }
 ];
 

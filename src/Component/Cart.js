@@ -12,6 +12,15 @@ function Cart() {
         dispatch(action.asyncloadcart(acc));
     }, [acc])
 
+    //thanh toans
+    const thanhtoan = (cart) => {
+        if(cart.length>0){
+            alert('mua hàng thành công');
+        }else{
+            alert('chưa có sản phẩm');
+        }
+    }
+
     // xoa  sap pham :
     var ondelete = (id, acc) => {
         dispatch(action.asyncdeleteproduct(id, acc));
@@ -44,7 +53,7 @@ function Cart() {
     var totalMoney = (cart) => {
         var total = 0;
         for (var i = 0; i < cart.length; i++) {
-               total += (cart[i].price - (cart[i].price / 100 * cart[i].sale)) * cart[i].soluong;
+            total += (cart[i].price - (cart[i].price / 100 * cart[i].sale)) * cart[i].soluong;
         }
         return total;
     }
@@ -85,7 +94,7 @@ function Cart() {
                             }
                         </div>
                         <div style={{ borderBottom: "none" }}>
-                            <button>Thanh toán</button>
+                            <button onClick={() => thanhtoan(cart)}>Mua hàng</button>
                         </div>
                     </div>
                 </div>

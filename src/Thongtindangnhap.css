@@ -1,0 +1,65 @@
+.form_box {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 20px;
+}
+.form_box1 {
+    text-align: right;
+    padding: 10px 20px;
+    width: 30%;
+}
+.form_box_botton {
+    padding: 10px 0 10px 35%;
+    text-align: left;
+}
+.form_box_botton button {
+    background-color: #e2492b;
+}
+.form_box2 {
+    padding: 10px 50px;
+    text-align: left;
+    width: 70%;
+}
+.form_box2 .input1 {
+    width: 40%;
+    padding: 5px;
+}
+.form_box2 .input2 {
+    width: 70%;
+    padding: 5px;
+}
+
+/* style cho thông tin */
+.thongtindangnhap {
+    width: 100%;
+    height: auto;
+    padding-left: 100px;
+}
+.quanlysp {
+    padding: 10px;
+}
+.hoso {
+    width: 100%;
+    border-bottom: 0.0625rem solid #efefef;
+    text-align: left;
+}
+.hoso h1 {
+    font-size: 19px;
+}
+
+.quanlysp_tr,
+.quanlysp_tr td {
+    height: 100px;
+    width: auto;
+}
+.quanlysp_tr td {
+    text-align: center;
+    font-size: 16px;
+}
+.quanlysp_tr_tdflex {
+    display: flex;
+    align-items: center;
+}
+.btn_hover:hover {
+    color: red;
+}

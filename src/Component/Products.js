@@ -20,7 +20,7 @@ var showproducts = (products) => {
               </div>
               <div className="card-title">
                 <h6> {item.name} </h6>
-                <p>{item.price}$</p>
+                <p>{item.price}đ</p>
               </div>
               <div className="card-boton">
                 <Link to={{
